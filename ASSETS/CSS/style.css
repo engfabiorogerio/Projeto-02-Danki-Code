@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: auto;
 }
+
+.clear{clear: both;}
 
 header{
     background-color: rgb(146, 143, 143);
@@ -15,6 +18,7 @@ header{
 }
 header img {
     height: 60px;
+    margin: 0 auto;
 }
 
 .form-bg {    
@@ -23,6 +27,8 @@ header img {
 }
 
 .form-bg img { 
+    position: relative;
+    top: 3px;
     width: 70%;
     height: 80vh; 
   
@@ -35,8 +41,10 @@ header img {
     width: 320px;
     height: 550px;
     background-color: rgb(208, 207, 207);
+    box-shadow: 10px 5px rgb(75, 74, 74);
     opacity: 0.7;
     transition: 1s;
+   
 }
 .input-box h2{
     padding: 7px;
@@ -48,6 +56,14 @@ header img {
     text-transform: uppercase;
     padding-top: 20px;
     padding-left: 35px;
+    text-align: left;
+}
+
+.input-box h3 {
+    padding-top: 50px;
+    padding-left: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
     text-align: left;
 }
 
@@ -92,6 +108,67 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 
+
+#text-property{
+    width: 100%;
+    background-color: rgb(102, 7, 102);
+    height: 10vh;
+}
+
+#text-property h2{
+    position: relative;
+    top: -90px;
+    font-size: 60px;
+    font-weight: bold;
+    color:rgb(75, 74, 74);
+    text-align: center;
+}
+
+#text-property h1 {
+    position: relative;
+    top: 20px;
+    text-transform: uppercase;
+    color:antiquewhite;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+@media screen and (max-width: 957px) {
+    #text-property > h1 {      
+        font-size: 22px;    
+    }
+    #text-property h2{        
+        top: -80px;      
+    } 
+
+    
+}
+
+@media screen and (max-width: 941px) {
+
+
+    .form-bg img{
+        width: 100%;
+        height: 60vh;
+    }
+    .input-box{   
+    top: 100px; 
+    right: 8%;
+    width: 320px;
+    height: 420px;  
+   
+}
+#text-property > h1 {      
+    font-size: 17px;    
+}
+
+}
+@media screen and (max-width: 700px) {
+    #text-property > h1 {      
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 690px) {
     header{
         height: 20vh;
@@ -101,16 +178,37 @@ input[type="submit"]:hover{
     }
     header img {
         height: 60px;       
-        margin: 6px 0;
+        margin: 4px 0;
     }
     .form-bg img{
         height: 70vh;
+        width: 100%;
     }
     .input-box{
         top: 200px;
         right: 25%;
         height: 450px;
         transition: 1s;
+    }
+    
+    #text-property > h1 {      
+        font-size: 22px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    #text-property h2{
+        position: relative;
+        top: -75px;
+        font-size: 60px;
+        font-weight: bold;
+        color:rgb(75, 74, 74);
+        text-align: center;
+    }
+}
+@media screen and (max-width: 591px) {
+    #text-property h2{        
+        top: -100px;      
     }
 }
 @media screen and (max-width: 575px) {
@@ -120,14 +218,42 @@ input[type="submit"]:hover{
     }
 
     .form-bg img{
+        width: 100%;
         height: 60vh;
     }
     .input-box{
-        top: 180px;
+        top: 170px;
         right: 18%;
         height: 450px;
         transition: 1s;
     }
+    
+    #text-property{    
+        height: 10vh;
+    }
 
+    #text-property h2{
+        
+        top: -75px;      
+    }
+
+    #text-property h1 {      
+        font-size: 20px;
+        text-align: center;
+       
 }
 
+@media screen and (max-width: 522px) {
+    #text-property h2{       
+        top: -100px;      
+}
+
+}
+@media screen and (max-width: 500px){
+    #text-property h2{        
+        top: -100px;      
+    } 
+}
+    
+
+}
