@@ -133,6 +133,31 @@ input[type="submit"]:hover{
     text-align: center;
     font-weight: normal;
 }
+
+.container-item {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    background-color: rgb(146, 143, 143);
+}
+
+.container-item .text-item h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 100px;
+}
+
+.container-item .image-item img {
+    width: 400px;
+    height: 250px;
+}
+
+
 @media screen and (max-width: 957px) {
     #text-property > h1 {      
         font-size: 22px;    
